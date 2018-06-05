@@ -7,19 +7,19 @@
 proxecat(x1, x2, x3, x4)
 }
 \arguments{
-\item{x1}{vector of the number of functional variants in cases for each gene region}
+\item{x1}{vector of the number of functional rare alleles in cases for each gene region}
 
-\item{x2}{vector of the number of synonymous variants (or other proxy) in cases for each gene region}
+\item{x2}{vector of the number of synonymous rare alleles (or other proxy) in cases for each gene region}
 
-\item{x3}{vector of the number of functional variants in controls for each gene region}
+\item{x3}{vector of the number of functional rare alleles in controls for each gene region}
 
-\item{x4}{vector of the number of synonymous variants (or other proxy) in controls for each gene region}
+\item{x4}{vector of the number of synonymous rare alleles (or other proxy) in controls for each gene region}
 }
 \value{
 likelihood ratio test statistic for proxy-ECAT. LRT is asymptotically chi-squared with 1 df.
 }
 \description{
-Runs Proxy External Controls Association Test (ProxECAT) method given the number of variants in each gene region
+Runs Proxy External Controls Association Test (ProxECAT) method given the number of rare alleles in each gene region
 }
 \examples{
 ##runs ProxECAT for 5 gene regions

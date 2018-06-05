@@ -7,13 +7,13 @@
 proxecat_over(x1, x2, x3, x4, size)
 }
 \arguments{
-\item{x1}{vector of the number of functional variants in cases for each gene region}
+\item{x1}{vector of the number of functional rare alleles in cases for each gene region}
 
-\item{x2}{vector of the number of synonymous variants (or other proxy) in cases for each gene region}
+\item{x2}{vector of the number of synonymous rare alleles (or other proxy) in cases for each gene region}
 
-\item{x3}{vector of the number of functional variants in controls for each gene region}
+\item{x3}{vector of the number of functional rare alleles in controls for each gene region}
 
-\item{x4}{vector of the number of synonymous variants (or other proxy) in controls for each gene region}
+\item{x4}{vector of the number of synonymous rare alleles (or other proxy) in controls for each gene region}
 
 \item{size}{overdispersion parameter. The smaller size, the more over dispersed. The larger size the less overdispersed.  Size of >1000 is approximately Poisson.}
 }
@@ -21,7 +21,7 @@ proxecat_over(x1, x2, x3, x4, size)
 likelihood ratio test statistic for overdispersed ProxECAT. LRT is asymptotically chi-squared with 1 df.
 }
 \description{
-Runs the overdispersed Proxy External Controls Association Test (ProxECAT) method given the number of variants in each gene region and an overdispersion parameter
+Runs the overdispersed Proxy External Controls Association Test (ProxECAT) method given the number of rare alleles in each gene region and an overdispersion parameter
 }
 \examples{
 ##runs overdispersed proxy-ECAT for 5 gene regions

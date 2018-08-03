@@ -16,16 +16,16 @@ proxecat(x1, x2, x3, x4)
 \item{x4}{vector of the number of synonymous rare alleles (or other proxy) in controls for each gene region}
 }
 \value{
-likelihood ratio test statistic for proxy-ECAT. LRT is asymptotically chi-squared with 1 df.
+input data, likelihood ratio test statistic and p-value for proxy-ECAT. LRT is asymptotically chi-squared with 1 df.
 }
 \description{
 Runs Proxy External Controls Association Test (ProxECAT) method given the number of rare alleles in each gene region
 }
 \examples{
 ##runs ProxECAT for 5 gene regions
-x1<-c(12,10,5,20,6)
-x2<-c(6,5,3,10,3)
-x3<-c(20,20,8,5,8)
+x1<-c(12,10,5,80,31)
+x2<-c(6,5,3,10,2)
+x3<-c(20,20,8,5,5)
 x4<-c(9,11,8,7,3)
 temp<-proxecat(x1=x1, x2=x2, x3=x3, x4=x4)
 temp

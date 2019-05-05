@@ -17,7 +17,9 @@ To install in R,
 To run proxecat or proxecat_over in R,
 
 proxecat::proxecat(x1, x2, x3, x4)
+
 proxecat::proxecat_over(x1, x2, x3, x4, size=1000)
+
 
 where 
 x1	is a vector of the number of functional rare alleles in cases for each gene region
